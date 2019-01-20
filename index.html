@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" type="image/png" href="imgs/favicon.png"/>
+		<title>Module Art ► Arrow Notes</title>
+		<link rel="stylesheet" href="css/master.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/scroll.js"></script>
+		<script type="text/javascript">
+			$( document ).ready(function() {
+				$('#navbar').load('html/navbar.html');
+				$('#footer').load('html/footer.html');
+
+				// document.getElementById('bodygrad').style.backgroundImage = 'linear-gradient(#7F7857, #BFB582)';
+			});
+		</script>
+	</head>
+	<body>
+		<div id="bodygrad"></div>
+		<div id="navbar"></div>
+		<center>
+
+			<!-- PREVIEW AND DESCRIPTION -->
+
+			<table>
+				<tr>
+					<td class="preview">
+						<div class="monitor" title="PC">
+							<img src="imgs/apps/arrownotes/monitor.png">
+						</div>
+						<div class="phone disable" title="Phone">
+							<img src="imgs/apps/arrownotes/phone.png">
+						</div>
+						<div class="tablet disable" title="Tablet">
+							<img src="imgs/apps/arrownotes/tablet.png">
+						</div>
+					</td>
+					<td class="description">
+						<img class="icon" src="imgs/apps/arrownotes/icon.png">
+						<label class="title">ARROW NOTES</label><br>
+						<label class="subtitle">v.1.1.3 / Beta / Free</label><br><br>
+						<label>► Created on: 2019.01.10</label><br>
+						<label>► Last update: 2019.01.20</label><br><br>
+						<label>
+							► Cross-platform desktop notes application.<br>
+							The program allows users to take notes using<br>
+							post-it note - like windows on their desktop.
+						</label><br><br>
+						<label>► Download for PC:</label><br>
+						<a class="btn" href="https://github.com/ModuleArt/arrownotes/blob/master/installs/anotes-1.1.3-win-x64.exe?raw=true">
+							<img src="imgs/icons/windows-black.png">
+							<label>Windows</label>
+						</a>
+						<div class="btn disable">
+							<img src="imgs/icons/mac-black.png">
+							<label>MacOS</label>
+						</div>
+						<div class="btn disable">
+							<img src="imgs/icons/ubuntu-black.png">
+							<label>Linux</label>
+						</div><br><br>
+						<label>► Download for mobile:</label><br>
+						<div class="btn disable">
+							<img src="imgs/icons/android-black.png">
+							<label>Android</label>
+						</div>
+					</td>
+				</tr>
+			</table>
+
+			<!-- SCREENSHOTS SLIDESHOW -->
+
+			<div class="slideshow-header">
+				<label>Screenshots / v.1.1.3</label>
+			</div>
+			<div class="slideshow-container">
+			  <img class="slideshow-slide" src="imgs/apps/arrownotes/screen1.png">
+				<img class="slideshow-slide" src="imgs/apps/arrownotes/screen2.png">
+				<img class="slideshow-slide" src="imgs/apps/arrownotes/screen3.png">
+				<img class="slideshow-slide" src="imgs/apps/arrownotes/screen4.png">
+				<img class="slideshow-slide" src="imgs/apps/arrownotes/screen5.png">
+				<img class="slideshow-slide" src="imgs/apps/arrownotes/screen6.png">
+			  <a class="slideshow-prevbtn" onclick="plusSlides(-1)">
+					<img src="imgs/icons/chevron-left-black.png">
+				</a>
+			  <a class="slideshow-nextbtn" onclick="plusSlides(1)">
+					<img src="imgs/icons/chevron-right-black.png">
+				</a>
+				<div class="slideshow-dots">
+				  <span class="slideshow-dots-dot" onclick="currentSlide(1)"></span>
+				  <span class="slideshow-dots-dot" onclick="currentSlide(2)"></span>
+				  <span class="slideshow-dots-dot" onclick="currentSlide(3)"></span>
+					<span class="slideshow-dots-dot" onclick="currentSlide(4)"></span>
+					<span class="slideshow-dots-dot" onclick="currentSlide(5)"></span>
+					<span class="slideshow-dots-dot" onclick="currentSlide(6)"></span>
+				</div>
+			</div><br><br>
+
+			<!-- RELEASES ACCORDION -->
+
+			<button class="accordion">Beta v.1.1.3 / 2019.01.20</button>
+			<div class="accordion-content">
+				<label>✔ Local storage is repaired.</label>
+				<label>✔ Added enctyption of app data.</label>
+				<label>✔ Correct display of the name, version and developer name in all places.</label>
+			</div>
+			<button class="accordion">Beta v.1.1.1 / 2019.01.15</button>
+			<div class="accordion-content">
+				<label>✔ You can run only one instance of the application.</label>
+				<label>✔ Reduced the size of the app from 110mb to 60mb.</label>
+			</div>
+			<button class="accordion">Beta v.1.1.0 / 2019.01.14</button>
+			<div class="accordion-content">
+				<label>✔ New menu close button animation.</label>
+				<label>✔ Now you can create new note and open notes list from note menu.</label>
+				<label>✔ Removed minimize button on notes list.</label>
+				<label>✔ Tray is repaired.</label>
+				<label>✔ Added hints for some buttons.</label>
+				<label>✔ New app icon.</label>
+			</div>
+			<button class="accordion">Beta v.1.0.0 / 2019.01.10</button>
+			<div class="accordion-content">
+				<label>✔ Arrow Notes is available.</label>
+			</div>
+		</center>
+
+		<!-- FOOTER AND SCRIPTS -->
+
+		<footer id="footer"></footer>
+		<script src="js/accordion.js"></script>
+		<script src="js/slideshow.js"></script>
+	</body>
+</html>
