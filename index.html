@@ -10,12 +10,14 @@
 
 <html lang="en" dir="ltr">
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
-		<link rel="shortcut icon" type="image/png" href="imgs/apps/arrownotes/favicon.png"/>
+		<link rel="shortcut icon" type="image/png" href="imgs/apps/arrownotes/icon.png"/>
 		<title>Arrow Notes ••• by Module Art</title>
 		<link rel="stylesheet" href="css/master.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="js/scroll.js"></script>
+		<script src="js/navbar.js"></script>
 		<script type="text/javascript">
 			$( document ).ready(function() {
 				$('#navbar').load('html/navbar.html');
@@ -37,126 +39,71 @@
 		<center class="container">
 
 <!--
-					████████ ██ ████████ ██      ███████     ████████  █████  ██████  ██      ███████
-					   ██    ██    ██    ██      ██             ██    ██   ██ ██   ██ ██      ██
-					   ██    ██    ██    ██      █████          ██    ███████ ██████  ██      █████
-					   ██    ██    ██    ██      ██             ██    ██   ██ ██   ██ ██      ██
-					   ██    ██    ██    ███████ ███████        ██    ██   ██ ██████  ███████ ███████
+					████████ ██ ████████ ██      ███████
+					   ██    ██    ██    ██      ██
+					   ██    ██    ██    ██      █████
+					   ██    ██    ██    ██      ██
+					   ██    ██    ██    ███████ ███████
 -->
 
-			<table class="title-table">
-				<tr>
-					<td>
-						<img class="page-img" src="imgs/apps/arrownotes/title.png">
-					</td>
-					<td>
-						<img class="app-icon" src="imgs/apps/arrownotes/icon.png">
-						<label class="title">Arrow Notes</label><br>
-						<label class="subtitle">Beta 1.2.0 / Free</label><br><br>
-						<label>Created on: 2019.01.10</label><br>
-						<label>Last update: 2019.01.28</label><br><br>
-						<label><strike>Cross-platform</strike> desktop notes application.</label><br>
-						<label>The program allows users to take notes using</label><br>
-						<label>post-it note - like windows on their desktop.</label><br><br>
-						<label>Download for PC:</label><br><br>
-						<a class="btn colored blue" href="https://github.com/ModuleArt/arrownotes/releases/download/v1.2.0/ArrowNotes.Setup.1.2.0.exe" title="Download installation file (Windows 10, 8.1, 7)">
-		          <img class="btn-icon" src="imgs/icons/windows.png">
-		          <div class="btn-body">
-		            <label class="btn-label">Windows</label>
-		          </div>
-		        </a>
-						<a class="btn" href="https://github.com/ModuleArt/arrownotes/releases" title="GitHub releases">
-		          <img class="btn-icon" src="imgs/icons/download.png">
-		          <div class="btn-body">
-		            <label class="btn-label">Releases</label>
-		          </div>
-		        </a>
-					</td>
-				</tr>
-			</table>
-			<hr>
+			<div class="description">
+				<img class="app-icon" src="imgs/apps/arrowbrowser/icon.png">
+				<label class="title">Arrow Notes</label>
+				<label class="subtitle">Beta 1.2.0 / Free</label><br>
+				<label>Created on: 2019.01.10</label>
+				<label>Last update: 2019.01.28</label><br>
+
+				<label><strike>Cross-platform</strike> desktop notes application.</label><br>
+
+				<label>The program allows users to take notes using post-it note - like windows on their desktop.</label><br>
+
+				<label>Features:</label>
+				<label>• The list of notes has many features and provides a preview of their text.</label>
+				<label>• You can move notes, change their size, and choose their color from the six suggested colors.</label>
+				<label>• You can search for words, letters, symbols in all notes at the same time.</label>
+				<label>• All deleted notes are placed in the trash. You can restore them at any time.</label>
+				<label>• You can sort notes by color. This feature is perfectly combined with the search.</label>
+				<label>• Each note has its own options and does not depend on others.</label>
+				<label>• Export / import notes.</label>
+			</div>
+
+			<div class="main">
+				<img class="title-img" src="imgs/apps/arrownotes/title.png">
+				<div class="downloads">
+					<label>Download for PC:</label><br>
+					<a class="btn colored blue" href="https://github.com/ModuleArt/arrownotes/releases/download/v1.2.0/ArrowNotes.Setup.1.2.0.exe" title="Download installation file (Windows 10, 8.1, 7)">
+						<img class="btn-icon" src="imgs/icons/windows.png">
+						<div class="btn-body">
+							<label class="btn-label">Windows</label>
+						</div>
+					</a>
+					<a class="btn" href="https://github.com/ModuleArt/arrownotes/releases" title="GitHub releases">
+						<img class="btn-icon" src="imgs/icons/download.png">
+						<div class="btn-body">
+							<label class="btn-label">Releases</label>
+						</div>
+					</a>
+				</div>
+			</div>
 
 <!--
-					██████   █████   ██████  ███████     ████████  █████  ██████  ██      ███████
-					██   ██ ██   ██ ██       ██             ██    ██   ██ ██   ██ ██      ██
-					██████  ███████ ██   ███ █████          ██    ███████ ██████  ██      █████
-					██      ██   ██ ██    ██ ██             ██    ██   ██ ██   ██ ██      ██
-					██      ██   ██  ██████  ███████        ██    ██   ██ ██████  ███████ ███████
+					███████  ██████ ██████  ███████ ███████ ███    ██ ███████ ██   ██  ██████  ████████ ███████
+					██      ██      ██   ██ ██      ██      ████   ██ ██      ██   ██ ██    ██    ██    ██
+					███████ ██      ██████  █████   █████   ██ ██  ██ ███████ ███████ ██    ██    ██    ███████
+					     ██ ██      ██   ██ ██      ██      ██  ██ ██      ██ ██   ██ ██    ██    ██         ██
+					███████  ██████ ██   ██ ███████ ███████ ██   ████ ███████ ██   ██  ██████     ██    ███████
 -->
 
-			<table class="page-table">
-				<tr>
-					<td class="right">
-						<img class="page-img" src="imgs/apps/arrownotes/list.png">
-					</td>
-					<td class="left">
-						<label class="title">Notes list</label><br><br>
-						<label>The list of notes has many features and</label><br>
-						<label>provides a preview of their text.</label>
-					</td>
-				</tr>
-				<tr>
-					<td class="right">
-						<img class="page-img" src="imgs/apps/arrownotes/colors.png">
-					</td>
-					<td class="left">
-						<label class="title">Customization</label><br><br>
-						<label>You can move notes, change their size, and choose </label><br>
-						<label>their color from the six suggested colors.</label>
-					</td>
-				</tr>
-				<tr>
-					<td class="right">
-						<img class="page-img" src="imgs/apps/arrownotes/search.png">
-					</td>
-					<td class="left">
-						<label class="title">Text filter</label><br><br>
-						<label>You can search for words, letters, symbols</label><br>
-						<label>in all notes at the same time.</label>
-					</td>
-				</tr>
-				<tr>
-					<td class="right">
-						<img class="page-img" src="imgs/apps/arrownotes/trash.png">
-					</td>
-					<td class="left">
-						<label class="title">Trash</label><br><br>
-						<label>All deleted notes are placed in the trash.</label><br>
-						<label>You can restore them at any time.</label>
-					</td>
-				</tr>
-				<tr>
-					<td class="right">
-						<img class="page-img" src="imgs/apps/arrownotes/color-filter.png">
-					</td>
-					<td class="left">
-						<label class="title">Color filter</label><br><br>
-						<label>You can sort notes by color.</label><br>
-						<label>This feature is perfectly combined with the search.</label>
-					</td>
-				</tr>
-				<tr>
-					<td class="right">
-						<img class="page-img" src="imgs/apps/arrownotes/note.png">
-					</td>
-					<td class="left">
-						<label class="title">Note options</label><br><br>
-						<label>Each note has its own options and</label><br>
-						<label>does not depend on others.</label>
-					</td>
-				</tr>
-				<tr>
-					<td class="right">
-						<img class="page-img" src="imgs/apps/arrownotes/settings.png">
-					</td>
-					<td class="left">
-						<label class="title">Settings</label><br><br>
-						<label>Three themes are available.</label><br>
-						<label>The application can start automatically at system startup.</label><br>
-						<label>You can save notes to a file or load them from a file.</label>
-					</td>
-				</tr>
-			</table>
+			<hr>
+			<label class="title">Screenshots</label><br>
+
+			<img class="screenshot" src="imgs/apps/arrownotes/list.png">
+			<img class="screenshot" src="imgs/apps/arrownotes/colors.png">
+			<img class="screenshot" src="imgs/apps/arrownotes/search.png">
+			<img class="screenshot" src="imgs/apps/arrownotes/trash.png">
+			<img class="screenshot" src="imgs/apps/arrownotes/color-filter.png">
+			<img class="screenshot" src="imgs/apps/arrownotes/note.png">
+			<img class="screenshot" src="imgs/apps/arrownotes/settings.png">
 
 <!--
 					███████  ██████   ██████  ████████ ███████ ██████
